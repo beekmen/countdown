@@ -21,15 +21,24 @@ body {
   height: 600px;
 }
 
+.countdown-end {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 142px;
+  color: #fff;
+  opacity: .8;
+  text-align: center;
+}
+
 #countdown, #countdown-text {
-    width: 650px;
+    width: 700px;
     font-family: 'Megrim', sans-serif;
     margin: 0;
     position: absolute;
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-}        
+}
 
 .countdown {
   font-weight: 900;
@@ -48,7 +57,6 @@ body {
   opacity: .8;
   text-align: center;
 }
-
 
 .timer {
   display: inline-block;

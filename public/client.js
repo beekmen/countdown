@@ -5,7 +5,7 @@
 // add other scripts at the bottom of index.html
 
 // Set the date we're counting down to
-var countDownDate = new Date("May 26 2017 22:45:00 UTC+1").getTime();
+var countDownDate = new Date('May 17 2017 UTC+0000').getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -23,23 +23,23 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000); 
   
   //Zeros
+var days = (days.toLocaleString(undefined,{minimumIntegerDigits: 2}));  
+  
 var hours = (hours.toLocaleString(undefined,{minimumIntegerDigits: 2}));  
   
 var minutes = (minutes.toLocaleString(undefined,{minimumIntegerDigits: 2}));
   
 var seconds = (seconds.toLocaleString(undefined,{minimumIntegerDigits: 2}));
   
-  // Display the result in the element with id="demo"
+  // Display the result in the element with id="timer"
   document.getElementById("daysTicker").innerHTML = days;
   document.getElementById("hoursTicker").innerHTML = hours;
   document.getElementById("minsTicker").innerHTML = minutes;
   document.getElementById("secsTicker").innerHTML = seconds;
   
   // If the count down is finished, write some text 
-  if (distance < 0) {
+  if (distance <=0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "RIGHT NOW!!";
+    document.getElementById("deadline").innerHTML = "TODAY!";
   }
-}, 1000);
-
-  
+}, 1000); 
