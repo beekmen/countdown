@@ -7,10 +7,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300|Megrim);
 
 body {
-  background: linear-gradient(
+  /*background: linear-gradient(
     rgba(20,20,20, .4), 
     rgba(20,20,20, .4)),
-    url(https://cdn.glitch.com/0a9a192d-71ff-4aca-92d1-7d74096c7122%2Fbackground_2.jpg?1494786918869);
+    url(https://cdn.glitch.com/0a9a192d-71ff-4aca-92d1-7d74096c7122%2Fbackground_2.jpg?1494786918869);*/
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -24,7 +24,7 @@ body {
 .countdown-end {
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
-  font-size: 142px;
+  font-size: 100px;
   color: #fff;
   opacity: .8;
   text-align: center;
@@ -63,6 +63,23 @@ body {
   margin: 10px;
 }
 
-.imageOverlay {
-   background: rgba(70, 72, 82, 0.3)
+
+#background_cycler {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#background_cycler img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+#background_cycler img.active {
+    z-index: 3;
 }
