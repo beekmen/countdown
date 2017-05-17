@@ -1,0 +1,53 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Babe countdown</title>
+    <meta name="Babe countdown" content="A countdown clock">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300|Megrim" rel="stylesheet">
+  </head>
+
+  <body>
+  <div class="countdown-wrapper">
+    <div id="countdown-text">
+ <div class="counter-text">Countdown to babe &#x2708</div>
+      <div class="timer">
+        <div id="daysTicker" class="countdown"></div>
+        <div class="counter-text">DAYS</div>
+      </div>
+      <div class="timer">
+        <div id="hoursTicker" class="countdown"></div>
+        <div class="counter-text">HOURS</div>
+      </div>
+      <div class="timer">
+        <div id="minsTicker" class="countdown"></div>
+        <div class="counter-text">MINS</div>
+      </div>
+      <div class="timer">
+        <div id="secsTicker" class="countdown"></div>
+        <div class="counter-text">SECS</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+  
+</html>
